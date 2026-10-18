@@ -1,0 +1,32 @@
+class Solution(object):
+    def convert(self, s, numRows):
+        """
+        :type s: str
+        :type numRows: int
+        :rtype: str
+        """
+
+        result=[""]*numRows
+
+        if numRows==1:
+            return s
+
+        cur_row=0
+        step=1
+
+        for ch in s:
+            result[cur_row] +=ch
+
+            if cur_row==0:
+                step=1
+            elif cur_row==numRows-1:
+                step=-1
+
+            
+            cur_row +=step
+
+        return "".join(result)
+               
+
+
+        
