@@ -1,0 +1,63 @@
+class Solution(object):
+    def reverse(self, x):
+        """
+        :type x: int
+        :rtype: int
+        """
+        sign=1
+        reverse=''
+        MIN_VALUE=-2147483648
+
+        MAX_VALUE=2147483647
+
+
+           
+
+
+
+
+            
+
+
+        if x>=0:
+            sign=1 
+        elif x<0:
+            sign=-1
+
+        x=abs(x)
+
+        x=str(x)
+
+        reverse=x[::-1]
+        reverse=int(reverse)
+
+        reverse=reverse*sign
+
+
+        if reverse>MAX_VALUE or reverse<MIN_VALUE:
+            return 0
+        else:
+            return reverse
+
+        
+
+        return reverse
+
+
+
+
+
+
+
+
+
+     
+        
+      
+
+   
+   
+        
+            
+
+       
