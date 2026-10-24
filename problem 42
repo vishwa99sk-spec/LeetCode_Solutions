@@ -1,0 +1,18 @@
+class Solution(object):
+    def isPowerOfTwo(self, n):
+        """
+        :type n: int
+        :rtype: bool
+        """
+        box=[]
+        
+
+        for i in range(2000):
+            value=pow(2,i)
+            box.append(value)
+    
+        if n in box:
+            return True
+        else:
+            return False
+
