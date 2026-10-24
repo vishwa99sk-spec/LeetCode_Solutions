@@ -1,0 +1,23 @@
+class Solution(object):
+    def addDigits(self, num):
+        """
+        :type num: int
+        :rtype: int
+        """
+        while num>=10:
+            loop=str(num)
+            total=0
+            for i in range(len(loop)):
+                total+=int(loop[i])
+
+            num=total
+
+        
+        
+        return num
+
+
+
+        
+
+        
